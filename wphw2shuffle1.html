@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background: #222;
+}
+
+.module-border-wrap {
+  max-width: 250px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to right, blue, orange);
+  padding: 3px;
+}
+
+.module {
+  background: #222;
+  color: white;
+  padding: 2rem;
+}
+</style>
+
+ <body>
+   <div class="module-border-wrap"><div class="module">
+     <h1>21 Card Game</h1><br>
+     Cards:
+     <div id="dealer-cards"></div>
+     <br>
+     <div id="player-cards"></div>
+     <br>
+     <input type='button' id='new-game-button' value='Start Game' onclick='newGame();'/>
+     <input type='button' id='hit-button' value='Hit' onclick='hit();'/>
+     <input type='button' id='stand-button' value='Stand' onclick='stand();'/>
+     <button onClick="window.location.reload();">New Game</button>
+     <br>
+     <br>
+
+     <br>
+     <br>
+     Score:
+     <div id="player-score"></div>
+     <div id="dealer-score"></div>
+     <br>
+     <h2 id="message-board"></h2>
+     </div></div>
+     <script src="wphw2shuffle1.js">
+     </script>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: lightblue;
+}
+
+.center {
+  margin: auto;
+  width: 60%;
+  border: 3px solid
+  padding: 10px;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+.button {
+  background-color: lightblue;
+  border: none;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.middle {
+  margin: auto;
+  width: 60%;
+  border: 3px solid lightblue;
+  padding: 10px;
+}
+
+</style>
+</head>
+<body>
+
+  <ul>
+    <li><a class="active" href="wphw2.html">Homework 2</a></li>
+    <li><a href="#wphw1.html">Homework 1</a></li>
+    <li><a href="index.html">Home</a></li>
+
+  </ul>
+
+
+
+  <div class="center">
+
+<div class="gallery">
+  <a target="_blank" href="img/hw2pic1.png">
+    <img src="img/hw2pic1.png" alt="pic1" width="800" height="600">
+  </a>
+  <div class="desc">First I wanted to practice shuffling the contents in an array before I started working on the card game. I incorprated the JS console just so at first i can concentrate on learning the formation of the JS code rather than dealing with the visuals. I came across All Things JavaScript, LLC Youtube video which helped me understand a lot better on how the array is shuffled and how the components are put together in a new aray so it can be displayed. At first I had trouble displaying to the console but that was becuase I set up the console.log code incorrectly. I re did the example a few times to really understand what was going on. More info in the code's comments.
+  </div>
+  <center><a href="consoleshuffle.html" class="button">Example 1</a></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img/hw2pic2.png">
+    <img src="img/hw2pic2.png" alt="pic2" width="800" height="600">
+  </a>
+  <div class="desc">Using the same idea that I was incorprating in the console number shuffler I decided to try and use another loop in order to switch the places of numbers. I decided this time to incorprate some light css as well. I found outt hat I can also use a while loop in order to provide the same functionality while looking up directions on StackOverflow. on the Thread called "How can I shuffle an array? [duplicate]" I realized there is multiple ways that I can go forth with shuffling whatever is inside the array. I set this number shuffler using a while loop this time. More info in the code's comments.</div>
+  <center><a href="wphw2shuffle2.html" class="button">Example 2</a></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img/hw2pic3.png">
+    <img src="img/hw2pic3.png" alt="pic3" width="800" height="600">
+  </a>
+  <div class="desc">Finally I was going to tackle the assignment of making a card game where the cards are shuffled and not duplicated. This took a while to finish up becuase I didnt realize there was so many functions to write when considering the players actions. I first set up the array of cards but then was stuck when deciding what fucntion to start off first. On Medium.com Mr.Hatch wrote a very nice article on how to set up a 21 like game and which fucntions are nessecary to make the game flow. I practiced with their version at first just to get the feel of which functions were needed. Then after undertsanding the games logic I made my own variation of the game where I took out the currency implementation and I added a new button that would start a game along with starting a fresh new game. It was a tough task to make a card game based on array shuffling but after a few practice examples I understood it better. More info in the code's comments.</div>
+  <center><a href="wphw2shuffle1.html" class="button">Example 3</a></center>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="img/hw2pic4.png">
+    <img src="img/hw2pic4.png" alt="pic4" width="800" height="600">
+  </a>
+  <div class="desc">As to attempt the final part of the assignment I decided to use what I understood about shuffling arrays to come up with a new game. I went with a number guessing game becuase I felt like it was a great was to use what I learned in a different way. I found a great article online on geeksforgeeks.com which explains the uses of function such as "document.getElement", "Math.random() ", and "Math.floor()" better. I used this article to help me start off this game by setting up the specific variables needed first then it would count the number of guesses it took the user to find the correct number. Then alliging the user guess with the actuall number to give a personalized message whether they were close by or got the correct number. Using the window pop up instead of the message fucntion to make the text appear on the page was just me trying something new but then while i was testing my program it started getting really annoying.More info in the code's comments. </div>
+  <center><a href="wphw2shuffle3.html" class="button">Example 4</a></center>
+</div>
+</div>
+
+<div class="middle">
+  <p>Alexander R. Galloway: Jodi’s Infrastructure - From the start I really enjoyed how the article describes what is done on the web as a tool for art even with its mathematical implementation. The article splits this idea into two categories: "Working on it" and "working within it" these to categories were described as where they both are imfluenced on how the creator is looking at their task or project. Working on is classified as Content whcih dissolves into context, and context itself becomes content. There is no outside inflence to it becuase whatever the medium is thats what represents the work and the message is protrsyed by what is put on that medium nothing more. Kind of like math. The author states that modern computer art was based on the message that was on the meduim and what the author intended while the contemporary computer artists are abput how the enviroment can effect their piece. My favorite part was when the author talked about ASCII art and how simple emoticons and more complex faces made its own undertsanding and own language in a sort of way. The author continues to discuss Jodi's work on the web by describing their work where Jodi used ASCII letters of non latin characters in order to create specific websites with a unique ability which was with the nn.com and the nnn.com where it kept on looping refreshing from one site to the other. Other works include the arrow.com where it makes a triangular shape using the url. In the end I realized that Jodi took something that had a specific meaning and created something totally brand new with it and gave it another meaning.
+
+  <br>
+  <br>
+
+  Ted Nelson: Software - Mr.Nelson first talks about an instance where a computer was used in a different way which made compuyer comapines question it. It allowed the question of what computers can do into the article where it discussed that the computer has always been revolvoing around the ideas of it being scientific and knows everything. But then Nelson switches over to the question that what can a computer really do? The author describes this new term of media art as "Making things look good,feel right, and come across clearly should bea general objective." however the author says that the computer shouldnt be classified as a facility but more of an open medium where it can be used to create a unique experiecne everytime. Author states that media art should hemp the user think in a collective format about that is on the medium and they every peice on media art should have a purpose such as flickering, was it how the artist intended it to be? The author states that computers in the future will not be associated as scientific but more in the realms of modern. The author has a very nice quote in which it sums up the entire article which states ", computerization can take whatever form we wish it to; therefore we must learn about computers in order to wish better." This article complements the first article in the way that computers have its own meaning to every different individual so it should not be classified as a computing machine but more of a medium where you can do whatever you want.
+</p>
+</div>
+
+</body>
+</html>

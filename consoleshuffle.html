@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Shuffling an Array in Console</title>
+  </head>
+  <body>
+    <center><h1>Check your Javascript Console to see the numbers 1 - 9 mixed up</h1>
+  </body>
+</html>
+<script>
+"use scrict"
+
+let FirstArray = [1,2,3,4,5,6,7,8,9];
+
+let arrayShuffle = function(arr) {
+  let newPos,
+      temp;
+
+  // sets up the array of numbers and allows the formation of the new shuffled numbers to get set up.
+
+      for (let i = arr.length - 1; i>0; i--){
+          newPos = Math.floor(Math.random() * (i+1));
+          temp = arr[i];
+          arr[i] = arr[newPos];
+          arr [newPos] = temp;
+      }
+        return arr;
+};
+
+//Sets up mixed array by using the random function to base it off the array length to see of all the numbers are in use and them sends them to designated areas.
+
+let newArray = arrayShuffle(FirstArray);
+
+console.log(newArray);
+
+let newArray2 = arrayShuffle(newArray);
+
+console.log(newArray2);
+
+//prints on console
+
+</script>
