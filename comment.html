@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>comment page</title>
+
+    <style>
+    .center {
+      margin: auto;
+      width: 60%;
+      border: 3px solid orange;
+      padding: 10px;
+    }
+    </style>
+
+    <script>
+
+    function postData(){
+          const data = {
+            user: document.getElementById("name").value,
+          };
+
+          fetch('http://localhost:8080/comment', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(data),
+          })
+          .then((response) => response.json())
+          .then((data) => {
+            console.log('Success:', data);
+          })
+        }
+
+      function postData(){
+              const data = {
+                user: document.getElementById("email").value,
+              };
+
+              fetch('http://localhost:8080/comment', {
+                method: 'POST',
+                headers: {
+                  'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+              })
+              .then((response) => response.json())
+              .then((data) => {
+                console.log('Success:', data);
+              })
+            }
+
+        function postData(){
+                    const data = {
+                      user: document.getElementById("comment").value,
+                    };
+
+                    fetch('http://localhost:8080/comment', {
+                      method: 'POST',
+                      headers: {
+                        'Content-Type': 'application/json',
+                      },
+                      body: JSON.stringify(data),
+                    })
+                    .then((response) => response.json())
+                    .then((data) => {
+                      console.log('Success:', data);
+                    })
+                  }
+
+    </script>
+  </head>
+  <body>
+    <div class="center">
+    <h1>Name:</h1>
+    <input type="TEXT" id="name" size="40"><br>
+
+    <input type="button" onclick="postData()" value="Submit">
+
+    h1>Email: </h1>
+    <input type="TEXT" id="name" size="40"><br>
+
+    <input type="button" onclick="postData()" value="Submit">
+
+    h1>Comment: </h1>
+    <input type="TEXT" id="name" size="40"><br>
+
+    <input type="button" onclick="postData()" value="Submit">
+	<br>
+	<br>
+<p>Thank You!</p>
+</div>
+
+  </body>
+</html>
