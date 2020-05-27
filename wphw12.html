@@ -97,8 +97,34 @@ img {
 
   </p>
 </div>
-
+<br>
 <img src="img/final5.png" alt="Pic6" style="width:50%;">
+
+<div class="center">
+  <p>
+
+    The video below shows the rapid change of numbers which simulates a different feeling in the viewer. It gives a sense of suspense and hesitation as the viewer looks at the changing numbers attempting to predict what will come. To talk about each separate part of my code I will start with the api folder. It contains an index.js file which by using axios fetches the data from the api. It allows for all the countries to get imported and all the information of recovered, confirmed, deaths, and the latest update to get posted on the site.
+
+The App.js file basically takes all the files in the project and sets it up together. Using react this file takes all the information from all the other important components in the project and sets up the data properly.
+
+The App.module.css is self-explanatory as it is the css file for the overall app but the reason why I have it set up as a module is because it specifically sets up the styling so it does not affect the styling of the other files.
+
+Now in the components folder is the three important aspects of this project. The Cards, The Chart, and The CountryPicker. Each of these files have their own styling. The Cards.js file sets up how the information is set up on the cards for each of the three main squares of information.
+
+The Chart.js file sets up the overall layout of the two different charts. The line graph and bar graph are both set up here according to user input. Here the graph fetches the data from the api and sets it up according to its parameters and color code.
+
+CountryPicker.js is also self-explanatory as it fetches all the possible countries which have covid-19 related data and sends their information to the site. This uses '@material-ui/core' to specifically set up it own ui in order to properly display all the countries coming from this api.
+
+The components folder also gets its own index file which basically sets up all the three files together to export the data from each.
+
+Lastly we come to the main index.js file which takes all the components gathered from the App.js file and renders all the information live using react-dom.
+
+
+  </p>
+</div>
+
+<video controls="controls" width="800" height="600"
+       name="Video Name" src="wphw12.mov"></video>
 
 </div>
 
